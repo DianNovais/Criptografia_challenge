@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge #1</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="./assets/img/Vector.svg" alt="logo marca" class="icon_logo" />
+      <div class="left_content">
+        <textarea
+          cols="30"
+          rows="5"
+          id="texto"
+          type="text"
+          placeholder="Digite um texto..."
+        ></textarea>
+        <p class="hidden" id="warning"></p>
+        <div class="btn_container">
+          <button class="btn_fill" onclick="encript()">Criptografar</button>
+
+          <button class="btn_light" onclick="decrypt()">Descriptografar</button>
+        </div>
+      </div>
+      <div class="rigth_content">
+        <div class="rigth_content">
+          <div class="hidden" id="encrypited_content">
+            <p id="text_content"></p>
+            <button class="btn_light" onclick="copyText()">Copiar</button>
+          </div>
+          
+          <div class="no_content" id="no_content">
+            <img src="./assets/img/hqi.svg" alt="icon não existe nada aqui" />
+            <h3>Não á nenhuma mensagem aqui.</h3>
+            <p>
+              Coloque alguma mensagem ao lado para Criptografar ou
+              Descriptografar
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
